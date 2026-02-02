@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>Central Library</h1>
+    <p>Seat & Slot Booking System</p>
+</header>
+
+<main class="container">
+
+    <!-- Seat Availability -->
+    <section class="card">
+        <h2>Seat Availability</h2>
+        <div class="seat-grid">
+            <div class="seat available">A1</div>
+            <div class="seat booked">A2</div>
+            <div class="seat available">A3</div>
+            <div class="seat booked">A4</div>
+            <div class="seat available">B1</div>
+            <div class="seat available">B2</div>
+            <div class="seat available">B3</div>
+            <div class="seat booked">B4</div>
+        </div>
+
+        <div class="legend">
+            <span class="dot green"></span> Available
+            <span class="dot red"></span> Booked
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="card">
+        <h2>Book Your Seat</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Roll Number</label>
+                <input type="text" placeholder="Enter roll number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Time Slot</label>
+                <select required>
+                    <option>Select slot</option>
+                    <option>9:00 AM – 11:00 AM</option>
+                    <option>11:00 AM – 1:00 PM</option>
+                    <option>2:00 PM – 4:00 PM</option>
+                    <option>4:00 PM – 6:00 PM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Seat Number</label>
+                <select required>
+                    <option>Select seat</option>
+                    <option>A1</option>
+                    <option>A3</option>
+                    <option>B1</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                </select>
+            </div>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <!-- Rules -->
+    <section class="card rules">
+        <h2>Library Rules</h2>
+        <ul>
+            <li>Maintain silence inside the library</li>
+            <li>No food or drinks allowed</li>
+            <li>Carry valid student ID</li>
+            <li>Vacate seat after slot ends</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Library Timings: 9:00 AM – 6:00 PM</p>
+    <p>Email: library@college.edu</p>
+</footer>
+
+</body>
+</html>
